@@ -1,4 +1,4 @@
-package com.event.management
+package com.ss.tracker
 
 import io.flutter.embedding.android.FlutterActivity
 

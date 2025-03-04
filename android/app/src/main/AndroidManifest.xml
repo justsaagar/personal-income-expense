@@ -4,7 +4,7 @@
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
-            android:name="com.event.management.MainActivity"
+            android:name="com.ss.tracker.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""
