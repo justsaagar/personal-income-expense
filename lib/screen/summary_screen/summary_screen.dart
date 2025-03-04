@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:untitled/app/helper/extension_helper.dart';
-import 'package:untitled/app/widgets/app_background.dart';
-import 'package:untitled/controller/onboarding_controller.dart';
-import 'package:untitled/screen/summary_screen/summary_screen_helper.dart';
+import 'package:personal_income_expense/app/helper/extension_helper.dart';
+import 'package:personal_income_expense/app/widgets/app_background.dart';
+import 'package:personal_income_expense/controller/onboarding_controller.dart';
+import 'package:personal_income_expense/screen/summary_screen/summary_screen_helper.dart';
 
 class SummaryScreen extends StatefulWidget {
   const SummaryScreen({super.key});

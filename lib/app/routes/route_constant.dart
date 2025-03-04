@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:untitled/screen/finance_module/month_screen/month_screen.dart';
-import 'package:untitled/screen/finance_module/transaction_screen/transaction_screen.dart';
-import 'package:untitled/screen/splash/splash_screen.dart';
-import 'package:untitled/screen/summary_screen/summary_screen.dart';
+import 'package:personal_income_expense/screen/finance_module/month_screen/month_screen.dart';
+import 'package:personal_income_expense/screen/finance_module/transaction_screen/transaction_screen.dart';
+import 'package:personal_income_expense/screen/splash/splash_screen.dart';
+import 'package:personal_income_expense/screen/summary_screen/summary_screen.dart';
 
 class RouteConstant {
   static const String initial = '/';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/app/constant/app_asset.dart';
-import 'package:untitled/app/widgets/app_image_assets.dart';
+import 'package:personal_income_expense/app/constant/app_asset.dart';
+import 'package:personal_income_expense/app/widgets/app_image_assets.dart';
 
 class AppBackground extends StatelessWidget {
   final Widget child;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/app/constant/color_constant.dart';
-import 'package:untitled/app/utills/dimension.dart';
+import 'package:personal_income_expense/app/constant/color_constant.dart';
+import 'package:personal_income_expense/app/utills/dimension.dart';
 
 class AppSwitch extends StatefulWidget {
   final bool initialValue;

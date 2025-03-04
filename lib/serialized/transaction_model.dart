@@ -19,7 +19,7 @@ class TransactionModel {
   @JsonKey(name: 'subHeaderLine')
   final String? description;
 
-  @JsonKey(name: 'isShow')
+  @JsonKey(name: 'isIncome')
   final bool isIncome;
 
   TransactionModel({this.transactionId, this.month, this.date, this.amount,  this.description, this.isIncome = false});

@@ -1,5 +1,5 @@
-import 'package:untitled/app/routes/route_helper.dart';
-import 'package:untitled/screen/finance_module/month_screen/month_screen.dart';
+import 'package:personal_income_expense/app/routes/route_helper.dart';
+import 'package:personal_income_expense/screen/finance_module/month_screen/month_screen.dart';
 
 class MonthScreenHelper {
   MonthScreenState state;

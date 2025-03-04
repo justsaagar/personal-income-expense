@@ -1,4 +1,4 @@
-import 'package:untitled/screen/finance_module/transaction_screen/transaction_screen.dart';
+import 'package:personal_income_expense/screen/finance_module/transaction_screen/transaction_screen.dart';
 
 class TransactionScreenHelper {
   TransactionScreenState state;

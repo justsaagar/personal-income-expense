@@ -3,19 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
-import 'package:untitled/app/constant/color_constant.dart';
-import 'package:untitled/app/routes/route_constant.dart';
-import 'package:untitled/app/routes/route_helper.dart';
-import 'package:untitled/app/widgets/app_text.dart';
-import 'package:untitled/repository/authentication/auth_repository.dart';
-import 'package:untitled/repository/authentication/authentication_helper.dart';
-import 'package:untitled/repository/utills/utills_helper.dart';
-import 'package:untitled/repository/utills/utills_repository.dart';
+import 'package:personal_income_expense/app/constant/color_constant.dart';
+import 'package:personal_income_expense/app/routes/route_constant.dart';
+import 'package:personal_income_expense/app/routes/route_helper.dart';
+import 'package:personal_income_expense/app/widgets/app_text.dart';
+import 'package:personal_income_expense/repository/utills/utills_helper.dart';
+import 'package:personal_income_expense/repository/utills/utills_repository.dart';
 
 final GetIt getIt = GetIt.instance;
 
 Future<void> init() async {
-  getIt.registerSingleton<AuthRepository>(AuthRepositoryImpl());
   getIt.registerSingleton<UtillsRepository>(UtillsRepositoryImpl());
 }
 
@@ -41,7 +38,7 @@ class MyApp extends StatelessWidget {
             GestureDetector(
               onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
               child: GetMaterialApp(
-                title: 'CC Event Management',
+                title: 'Income tracker',
                 theme: ThemeData(
                   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
                   useMaterial3: true,

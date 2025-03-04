@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:untitled/app/constant/app_asset.dart';
-import 'package:untitled/app/constant/color_constant.dart';
-import 'package:untitled/app/helper/extension_helper.dart';
-import 'package:untitled/app/routes/route_helper.dart';
-import 'package:untitled/app/utills/date_utils.dart';
-import 'package:untitled/main.dart';
-import 'package:untitled/repository/utills/utills_repository.dart';
-import 'package:untitled/serialized/transaction_model.dart';
+import 'package:personal_income_expense/app/constant/app_asset.dart';
+import 'package:personal_income_expense/app/constant/color_constant.dart';
+import 'package:personal_income_expense/app/helper/extension_helper.dart';
+import 'package:personal_income_expense/app/routes/route_helper.dart';
+import 'package:personal_income_expense/app/utills/date_utils.dart';
+import 'package:personal_income_expense/main.dart';
+import 'package:personal_income_expense/repository/utills/utills_repository.dart';
+import 'package:personal_income_expense/serialized/transaction_model.dart';
 
 class FinanceController extends GetxController {
   UtillsRepository utillsRepository = getIt.get<UtillsRepository>();
+  bool isLoading = false;
   final List<String> months = [
     'January',
     'February',
@@ -64,6 +65,8 @@ class FinanceController extends GetxController {
   }
 
   Future<void> submitTransaction() async {
+    isLoading = true;
+    update();
     final TransactionModel transactionModel = TransactionModel(
       transactionId: DateTime.now().microsecondsSinceEpoch.toString(),
       amount: num.parse(amountEditingController.text),
@@ -74,7 +77,9 @@ class FinanceController extends GetxController {
     );
     'TransactionModel --> ${transactionModel.toJson()}'.logs();
     await utillsRepository.addTransactionData(transactionModel);
-    RouteHelper.instance.goToOnBoarding();
+    RouteHelper.instance.goToTransaction();
+    isLoading = false;
+    update();
   }
 
   void manageType(bool value) {

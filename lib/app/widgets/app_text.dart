@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:untitled/app/constant/color_constant.dart';
+import 'package:personal_income_expense/app/constant/color_constant.dart';
 
 class AppText extends StatelessWidget {
   final String title;

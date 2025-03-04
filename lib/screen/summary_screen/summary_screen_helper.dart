@@ -1,4 +1,4 @@
-import 'package:untitled/screen/summary_screen/summary_screen.dart';
+import 'package:personal_income_expense/screen/summary_screen/summary_screen.dart';
 
 class SummaryScreenHelper {
   SummaryScreenState state;

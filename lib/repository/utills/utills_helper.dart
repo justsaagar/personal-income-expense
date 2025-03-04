@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:untitled/app/constant/string_constant.dart';
-import 'package:untitled/app/helper/extension_helper.dart';
-import 'package:untitled/repository/utills/utills_repository.dart';
-import 'package:untitled/serialized/transaction_model.dart';
+import 'package:personal_income_expense/app/constant/string_constant.dart';
+import 'package:personal_income_expense/app/helper/extension_helper.dart';
+import 'package:personal_income_expense/repository/utills/utills_repository.dart';
+import 'package:personal_income_expense/serialized/transaction_model.dart';
 
 class UtillsRepositoryImpl extends UtillsRepository {
   CollectionReference transactionCollection = FirebaseFirestore.instance.collection(AppCollectionConstants.transaction);

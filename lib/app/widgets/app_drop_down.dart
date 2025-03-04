@@ -1,8 +1,8 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled/app/constant/color_constant.dart';
-import 'package:untitled/app/utills/dimension.dart';
-import 'package:untitled/app/widgets/app_text.dart';
+import 'package:personal_income_expense/app/constant/color_constant.dart';
+import 'package:personal_income_expense/app/utills/dimension.dart';
+import 'package:personal_income_expense/app/widgets/app_text.dart';
 
 class AppDropdown<T> extends StatelessWidget {
   final List<T> items;

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:untitled/app/constant/color_constant.dart';
-import 'package:untitled/app/helper/extension_helper.dart';
-import 'package:untitled/app/widgets/app_background.dart';
-import 'package:untitled/app/widgets/app_text.dart';
-import 'package:untitled/controller/onboarding_controller.dart';
-import 'package:untitled/screen/finance_module/month_screen/month_screen_helper.dart';
+import 'package:personal_income_expense/app/constant/color_constant.dart';
+import 'package:personal_income_expense/app/helper/extension_helper.dart';
+import 'package:personal_income_expense/app/widgets/app_background.dart';
+import 'package:personal_income_expense/app/widgets/app_text.dart';
+import 'package:personal_income_expense/controller/onboarding_controller.dart';
+import 'package:personal_income_expense/screen/finance_module/month_screen/month_screen_helper.dart';
 
 class MonthScreen extends StatefulWidget {
   const MonthScreen({super.key});
