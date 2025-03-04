@@ -7,6 +7,7 @@ import 'package:untitled/app/utills/date_utils.dart';
 import 'package:untitled/app/utills/dimension.dart';
 import 'package:untitled/app/widgets/app_background.dart';
 import 'package:untitled/app/widgets/app_button.dart';
+import 'package:untitled/app/widgets/app_switch.dart';
 import 'package:untitled/app/widgets/app_text.dart';
 import 'package:untitled/app/widgets/app_text_form_field.dart';
 import 'package:untitled/controller/onboarding_controller.dart';
@@ -69,6 +70,14 @@ class TransactionScreenState extends State<TransactionScreen> {
                     isMaxLines: true,
                     keyboardType: TextInputType.multiline,
                     controller: financeController?.descEditingController,
+                  ),
+                  const SizedBox(height: 22),
+                  Row(
+                    children: [
+                      const AppText('Transaction type', fontWeight: FontWeight.w800, fontSize: 18),
+                      const SizedBox(width: 22),
+                      AppSwitch(onChanged: (value) => financeController?.manageType(value), initialValue: financeController?.isIncome),
+                    ],
                   ),
                   const SizedBox(height: 22),
                   AppButton(title: 'Submit', onTap: () => financeController?.submitTransaction()),

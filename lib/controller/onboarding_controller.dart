@@ -76,4 +76,9 @@ class FinanceController extends GetxController {
     await utillsRepository.addTransactionData(transactionModel);
     RouteHelper.instance.goToOnBoarding();
   }
+
+  void manageType(bool value) {
+    isIncome = value;
+    update();
+  }
 }
