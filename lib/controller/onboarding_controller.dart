@@ -78,6 +78,8 @@ class FinanceController extends GetxController {
     'TransactionModel --> ${transactionModel.toJson()}'.logs();
     await utillsRepository.addTransactionData(transactionModel);
     RouteHelper.instance.goToTransaction();
+    amountEditingController.clear();
+    descEditingController.clear();
     isLoading = false;
     update();
   }

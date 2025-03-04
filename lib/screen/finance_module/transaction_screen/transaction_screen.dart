@@ -72,6 +72,7 @@ class TransactionScreenState extends State<TransactionScreen> {
                       AppTextFormField(
                         isMaxLines: true,
                         keyboardType: TextInputType.multiline,
+                        textInputAction: TextInputAction.newline,
                         controller: financeController?.descEditingController,
                       ),
                       const SizedBox(height: 22),

@@ -12,7 +12,7 @@ class RouteHelper {
 
   void goToOnBoarding() => Get.toNamed(RouteConstant.onBoarding);
 
-  void goToTransaction() => Get.toNamed(RouteConstant.transaction);
+  void goToTransaction() => Get.offAllNamed(RouteConstant.transaction);
 
   void goToSummary() => Get.toNamed(RouteConstant.summary);
 }
