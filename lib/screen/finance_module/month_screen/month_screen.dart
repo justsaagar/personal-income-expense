@@ -45,7 +45,6 @@ class MonthScreenState extends State<MonthScreen> {
                     child: Center(
                       child: AppText(
                         monthScreenHelper?.months[index] ?? '',
-                        color: AppColorConstant.appWhite,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

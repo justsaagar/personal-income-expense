@@ -63,7 +63,6 @@ class AppDropdown<T> extends StatelessWidget {
             padding: const EdgeInsets.only(top: 4.0),
             child: AppText(
               errorText ?? '',
-              color: AppColorConstant.appWhite,
               fontSize: 12,
             ),
           ),

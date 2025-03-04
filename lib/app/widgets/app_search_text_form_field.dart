@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:untitled/app/constant/color_constant.dart';
 import 'package:untitled/app/helper/extension_helper.dart';
 import 'package:untitled/app/widgets/app_text.dart';
 
@@ -50,7 +49,6 @@ class AppSearchTextFormField extends StatelessWidget {
         if (headerText != null) ...[
           AppText(
             headerText ?? '',
-            color: AppColorConstant.appWhite,
             fontWeight: FontWeight.w600,
           ),
           SizedBox(height: MediaQuery.of(context).size.height * 0.01),
@@ -112,7 +110,6 @@ class AppSearchTextFormField extends StatelessWidget {
             padding: const EdgeInsets.only(left: 10),
             child: AppText(
               errorText ?? '',
-              color: AppColorConstant.appWhite,
               fontSize: 12,
               fontWeight: FontWeight.w500,
             ),

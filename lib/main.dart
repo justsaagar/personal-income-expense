@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
 import 'package:untitled/app/constant/color_constant.dart';
-import 'package:untitled/app/helper/extension_helper.dart';
 import 'package:untitled/app/routes/route_constant.dart';
 import 'package:untitled/app/routes/route_helper.dart';
 import 'package:untitled/app/widgets/app_text.dart';
@@ -76,7 +75,6 @@ class MyApp extends StatelessWidget {
                           quarterTurns: -1,
                           child: AppText(
                             'Summary',
-                            color: AppColorConstant.appWhite,
                             fontWeight: FontWeight.bold,
                           ),
                         ),

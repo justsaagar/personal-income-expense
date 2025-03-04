@@ -61,7 +61,7 @@ class TransactionScreenState extends State<TransactionScreen> {
                   AppTextFormField(
                     controller: financeController?.amountEditingController,
                     keyboardType: TextInputType.number,
-                    inputFormatters: [FilteringTextInputFormatter.digitsOnly]
+                    inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                   ),
                   const SizedBox(height: 22),
                   const AppText('Description', fontWeight: FontWeight.w800, fontSize: 18),

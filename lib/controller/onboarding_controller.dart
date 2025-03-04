@@ -46,7 +46,7 @@ class FinanceController extends GetxController {
         return Theme(
           data: ThemeData(
             dialogBackgroundColor: AppColorConstant.appWhite,
-            colorScheme: const ColorScheme.light(primary: AppColorConstant.appLightPurple, onSurface: AppColorConstant.appBlack),
+            colorScheme: const ColorScheme.light(primary: AppColorConstant.appLightPurple),
             fontFamily: AppAsset.defaultFont,
             dialogTheme: DialogTheme(
               elevation: 2,
