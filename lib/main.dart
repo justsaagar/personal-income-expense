@@ -6,6 +6,7 @@ import 'package:get_it/get_it.dart';
 import 'package:untitled/app/constant/color_constant.dart';
 import 'package:untitled/app/helper/extension_helper.dart';
 import 'package:untitled/app/routes/route_constant.dart';
+import 'package:untitled/app/routes/route_helper.dart';
 import 'package:untitled/app/widgets/app_text.dart';
 import 'package:untitled/repository/authentication/auth_repository.dart';
 import 'package:untitled/repository/authentication/authentication_helper.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
       child: Directionality(
         textDirection: TextDirection.rtl,
         child: Stack(
+          alignment: Alignment.centerRight,
           children: [
             GestureDetector(
               onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
@@ -59,7 +61,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: () => "stackapp.solution@gmail.com".launchStoreRating(),
+              onTap: () => RouteHelper.instance.goToSummary(),
               child: Container(
                 height: 120,
                 width: 30,
@@ -73,7 +75,7 @@ class MyApp extends StatelessWidget {
                         RotatedBox(
                           quarterTurns: -1,
                           child: AppText(
-                            'Feedback',
+                            'Summary',
                             color: AppColorConstant.appWhite,
                             fontWeight: FontWeight.bold,
                           ),

@@ -25,7 +25,7 @@ class AppColorConstant {
 
   static List<BoxShadow> appBoxShadow = [
     BoxShadow(
-      offset: const Offset(0, -6),
+      offset: const Offset(0, 6),
       spreadRadius: 0.2,
       color: appBlack.withOpacity(0.2),
       blurRadius: 2,

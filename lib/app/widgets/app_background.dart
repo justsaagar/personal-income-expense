@@ -11,11 +11,14 @@ class AppBackground extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        AppImageAsset(
-          image: AppAsset.appBackground,
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          fit: BoxFit.cover,
+        Opacity(
+          opacity: 0.6,
+          child: AppImageAsset(
+            image: AppAsset.appBackground,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            fit: BoxFit.cover,
+          ),
         ),
         SafeArea(child: child),
       ],

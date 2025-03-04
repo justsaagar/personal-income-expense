@@ -60,7 +60,7 @@ class AppTextFormField extends StatelessWidget {
             onChanged: onChanged,
             obscureText: obscureText,
             textInputAction: textInputAction??TextInputAction.done,
-            maxLines: isMaxLines==true ? null :1,
+            maxLines: isMaxLines == true ? 5 : 1,
             selectionControls: enableInteractiveSelection == false
                 ? DesktopTextSelectionControls()
                 : MaterialTextSelectionControls(),

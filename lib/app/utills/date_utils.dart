@@ -1,7 +1,8 @@
 import 'package:intl/intl.dart';
 
 class DateTimeUtils {
-  static String getFormattedBirthDate(DateTime dateTime) {
+  static String getFormattedBirthDate(DateTime? dateTime) {
+    if (dateTime == null) return '';
     final DateFormat formatter = DateFormat('dd MMM yyyy');
     return formatter.format(dateTime);
   }

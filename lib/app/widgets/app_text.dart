@@ -20,7 +20,7 @@ class AppText extends StatelessWidget {
   const AppText(
     this.title, {
     super.key,
-    this.color = AppColorConstant.appBlack,
+    this.color = AppColorConstant.appWhite,
     this.fontWeight,
     this.fontFamily,
     this.fontSize = 16,
@@ -39,7 +39,7 @@ class AppText extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: leftSpacing),
       child: Text(
-        title.tr.toLowerCase(),
+        title.tr,
         textAlign: textAlign,
         maxLines: maxLines,
         style: TextStyle(

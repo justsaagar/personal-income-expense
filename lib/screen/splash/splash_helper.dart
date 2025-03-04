@@ -19,7 +19,7 @@ class SplashScreenHelper {
       () async {
         if (FirebaseAuth.instance.currentUser?.uid != null) {
         } else {
-          RouteHelper.instance.goToOnBoarding();
+          RouteHelper.instance.goToTransaction();
         }
       },
     );
